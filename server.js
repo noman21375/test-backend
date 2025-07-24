@@ -34,6 +34,8 @@ app.post('/api/GoodBy', async (req, res) => {
         });
     }
 });
+app.get('/', (req, res) => {
+    res.send('server is working!');})
 
 const PORT = process.env.PORT || 3601;
 app.listen(PORT, () => {
